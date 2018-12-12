@@ -1,12 +1,11 @@
-
-#	Estimating 6D Pose From Localizing Designated Surface Keypoints
+#	Betapose: estimating 6D Pose From Localizing Designated Surface Keypoints
 Please refer to our paper for detailed explanation. 
 In the following, `ROOT` refers to the folder containing this README file.
-## ¢Ò. Installation
+## ‚Ö†. Installation
 1. All the codes are tested in Python, CUDA 8.0 and CUDNN 5.1.
 2. Install [pytorch 0.4.0](https://github.com/pytorch/pytorch) and other dependencies.
 3. Download LineMod dataset [here](http://ptak.felk.cvut.cz/6DB/public/datasets/hinterstoisser/). Only folders called models and test are needed. Put them in `DATAROOT/models` and `DATAROOT/test` where `DATAROOT` can be any folder you'd like to place LineMod dataset.
-## ¢Ú. Designate Keypoints
+## ‚Ö°. Designate Keypoints
 **You can skip this step since we have provided designated keypoints files in '$ROOT/1_keypoint_designator/assets/sifts/'**.
 1. The related code is in `$ROOT/1_keypoint_designator/`.
 	```bash
@@ -18,7 +17,7 @@ In the following, `ROOT` refers to the folder containing this README file.
 	$ sh build_and_run.sh
 	```
 	The output file is in `$./assets/sifts/`. It's a ply file storing the 3D coordinates of designated keypoints.
-## ¢Û. Annotate Keypoints
+## ‚Ö¢. Annotate Keypoints
 1. The related code is in `$ROOT/2_keypoint_annotator/`.
 	```bash
 	$ cd ROOT/2_keypoint_annotator/
@@ -32,7 +31,7 @@ In the following, `ROOT` refers to the folder containing this README file.
 	$ python annotate_keypoint.py -h
 	```	
 3. The annotated keypoints are in file `annot_train.h5` and `annot_eval.h5`. The corresponding training images are in folders `train` and `eval`.
-## ¢Ù. Training
+## ‚Ö£. Training
 ### Train Object Detector YOLOv3
 1. Relative files locate in `$ROOT/3_6Dpose_estimator/train_YOLO`.
 	```bash
@@ -65,7 +64,7 @@ In the following, `ROOT` refers to the folder containing this README file.
 	$ tensorboard --logdir ./
 	```
 
-## ¢ı. Evaluate
+## ‚Ö§. Evaluate
 1.  Move back to the root of pose estimator.
 	```bash
 	$ cd ROOT/3_6Dpose_estimator/
@@ -77,4 +76,4 @@ In the following, `ROOT` refers to the folder containing this README file.
 	```
 	The output json file containing predicted 6D poses will be in examples/seq1.
 
-[comment]:  <>  (¢Ò°¢¢Ú°¢¢Û°¢¢Ù°¢¢ı°¢¢ˆ°¢¢˜°¢¢¯°¢¢˘)
+[comment]:  <>  (‚Ö†„ÄÅ‚Ö°„ÄÅ‚Ö¢„ÄÅ‚Ö£„ÄÅ‚Ö§„ÄÅ‚Ö•„ÄÅ‚Ö¶„ÄÅ‚Öß„ÄÅ‚Ö®)
