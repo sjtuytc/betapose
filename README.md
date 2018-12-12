@@ -1,4 +1,4 @@
-#	Betapose: estimating 6D Pose From Localizing Designated Surface Keypoints
+#	Betapose: Estimating 6D Pose From Localizing Designated Surface Keypoints
 Please refer to our paper for detailed explanation. 
 In the following, `ROOT` refers to the folder containing this README file.
 ## Ⅰ. Installation
