@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0,1 python3 src/train.py --expID new_seq1_50kp_2 --nClasses 50 --optMethod adam --trainBatch 32

@@ -1,0 +1,8 @@
+torchvision
+-e git+https://github.com/ncullen93/torchsample.git#egg=torchsample
+visdom
+nibabel
+pandas
+tqdm
+matplotlib
+opencv-python
