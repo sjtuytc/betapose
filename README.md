@@ -75,5 +75,3 @@ In the following, `ROOT` refers to the folder containing this README file.
 	$ CUDA_VISIBLE_DEVICES=1 python3 betapose_evaluate.py --nClasses 50 --indir /01/eval --outdir examples/seq1 --sp --profile
 	```
 	The output json file containing predicted 6D poses will be in examples/seq1.
-
-[comment]:  <>  (Ⅰ、Ⅱ、Ⅲ、Ⅳ、Ⅴ、Ⅵ、Ⅶ、Ⅷ、Ⅸ)
