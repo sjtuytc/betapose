@@ -1,5 +1,5 @@
 #	Betapose: Estimating 6D Pose From Localizing Designated Surface Keypoints
-Please refer to our paper for detailed explanation. 
+Please refer to our paper for detailed explanation. Arxiv Link is [here](https://arxiv.org/abs/1812.01387).
 In the following, `ROOT` refers to the folder containing this README file.
 ## Ⅰ. Installation
 1. All the codes are tested in Python, CUDA 8.0 and CUDNN 5.1.
