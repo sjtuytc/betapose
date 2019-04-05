@@ -1,6 +1,8 @@
 #	Betapose: Estimating 6D Pose From Localizing Designated Surface Keypoints
 Please refer to our paper for detailed explanation. Arxiv Link is [here](https://arxiv.org/abs/1812.01387).
 In the following, `ROOT` refers to the folder containing this README file.
+## 0. News:
+   I contained all important public literature in this repo to boost research. If there is a conflict or an issue, please raise it in issue part.
 ## Ⅰ. Installation
 1. All the codes are tested in Python, CUDA 8.0 and CUDNN 5.1.
 2. Install [pytorch 0.4.0](https://github.com/pytorch/pytorch) and other dependencies.
