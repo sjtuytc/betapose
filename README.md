@@ -2,7 +2,13 @@
 Please refer to our paper for detailed explanation. Arxiv Link is [here](https://arxiv.org/abs/1812.01387).
 In the following, `ROOT` refers to the folder containing this README file.
 ## 0. News:
-   I contained all important public literature in this repo to boost research. If there is a conflict or an issue, please raise it in issue part.
+   Before you running this repository, please look at this one: https://github.com/sjtuytc/segmentation-driven-pose.
+   It's much greater because it's:
+   1. RGB only.
+   2. SOTA precision and speed.
+   3. Multi Object.
+   4. Training end-to-end instead of two-step.
+   5. Code super easy to understand and fully open-source.
 ## Ⅰ. Installation
 1. All the codes are tested in Python, CUDA 8.0 and CUDNN 5.1.
 2. Install [pytorch 0.4.0](https://github.com/pytorch/pytorch) and other dependencies.
